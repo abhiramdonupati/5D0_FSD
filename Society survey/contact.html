@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact / Help</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            margin:0;
+            padding:20px;
+        }
+
+        h1{
+            text-align:center;
+            color:#003366;
+        }
+
+        .container{
+            max-width:700px;
+            margin:auto;
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        label{
+            font-weight:bold;
+        }
+
+        input, textarea{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            margin-bottom:15px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        button{
+            background:#003366;
+            color:white;
+            border:none;
+            padding:12px 20px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#0055aa;
+        }
+
+        .info{
+            margin-top:30px;
+            padding:15px;
+            background:#eef5ff;
+            border-radius:5px;
+        }
+    </style>
+
+    <script>
+        function submitForm(){
+            alert("Your message has been submitted successfully!");
+        }
+    </script>
+</head>
+<body>
+
+<h1>Contact / Help Desk</h1>
+
+<div class="container">
+
+    <form>
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Subject</label>
+        <input type="text" placeholder="Enter subject" required>
+
+        <label>Message</label>
+        <textarea rows="5" placeholder="Enter your message" required></textarea>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <div class="info">
+        <h3>Society Office Information</h3>
+
+        <p><strong>Address:</strong> Green Valley Residency, Main Road, Hyderabad, Telangana - 500001</p>
+
+        <p><strong>Email:</strong> societyoffice@gmail.com</p>
+
+        <p><strong>Phone:</strong> +91 9876543210</p>
+
+        <p><strong>Office Timings:</strong> Monday - Saturday, 9:00 AM to 6:00 PM</p>
+    </div>
+
+</div>
+
+</body>
+</html>

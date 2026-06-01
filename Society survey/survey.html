@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Society Survey</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            padding:20px;
+        }
+
+        .container{
+            max-width:700px;
+            margin:auto;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            text-align:center;
+            color:#003366;
+        }
+
+        label{
+            font-weight:bold;
+        }
+
+        textarea, select{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            margin-bottom:15px;
+        }
+
+        button{
+            background:#003366;
+            color:white;
+            padding:10px 20px;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#0055aa;
+        }
+    </style>
+
+    <script>
+        function submitSurvey(){
+            alert("Survey Submitted Successfully!");
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Society Survey Form</h1>
+
+<form>
+
+<label>1. Cleanliness Satisfaction</label><br>
+<input type="radio" name="cleanliness"> Excellent
+<input type="radio" name="cleanliness"> Good
+<input type="radio" name="cleanliness"> Average
+<input type="radio" name="cleanliness"> Poor
+<br><br>
+
+<label>2. Security Service Feedback</label><br>
+<input type="radio" name="security"> Excellent
+<input type="radio" name="security"> Good
+<input type="radio" name="security"> Average
+<input type="radio" name="security"> Poor
+<br><br>
+
+<label>3. Parking Issues</label><br>
+<input type="checkbox"> Lack of Space
+<input type="checkbox"> Unauthorized Parking
+<input type="checkbox"> No Issues
+<br><br>
+
+<label>4. Water Supply Feedback</label><br>
+<select>
+    <option>Select Rating</option>
+    <option>Excellent</option>
+    <option>Good</option>
+    <option>Average</option>
+    <option>Poor</option>
+</select>
+
+<label>5. Maintenance Quality</label><br>
+<select>
+    <option>Select Rating</option>
+    <option>Excellent</option>
+    <option>Good</option>
+    <option>Average</option>
+    <option>Poor</option>
+</select>
+
+<label>6. Suggestions Box</label><br>
+<textarea rows="5" placeholder="Enter your suggestions here"></textarea>
+
+<button type="button" onclick="submitSurvey()">Submit Survey</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

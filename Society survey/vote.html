@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Vote for Candidate</h1>
+<form>
+    <div class="card">
+        <h3>Ramesh</h3>
+        <p>Flat No: A-101</p>
+        <input type="radio" name="vote" value="Ramesh">
+    </div>
+    <div class="card">
+        <h3>Suresh</h3>
+        <p>Flat No: B-202</p>
+        <input type="radio" name="vote" value="Suresh">
+    </div>
+    <button type="button" onclick="showVoteAlert()">Submit Vote</button>
+</form>
+<script>
+function showVoteAlert() {
+    const selected = document.querySelector('input[name="vote"]:checked');
+    if (selected) {
+        alert("Your vote has been submitted successfully!");
+    } else {
+        alert("Please select a candidate before submitting.");
+    }
+}
+</script>
+</body>
+</html>

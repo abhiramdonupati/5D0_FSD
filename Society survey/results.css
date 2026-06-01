@@ -1,0 +1,63 @@
+body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            margin:0;
+            padding:20px;
+        }
+
+        h1{
+            text-align:center;
+            color:#003366;
+        }
+
+        .winner{
+            background:#d4edda;
+            border:2px solid green;
+            padding:15px;
+            margin:20px auto;
+            width:60%;
+            text-align:center;
+            border-radius:10px;
+        }
+
+        table{
+            width:80%;
+            margin:auto;
+            border-collapse:collapse;
+            background:white;
+        }
+
+        th{
+            background:#003366;
+            color:white;
+        }
+
+        th,td{
+            border:1px solid #ddd;
+            padding:12px;
+            text-align:center;
+        }
+
+        .progress{
+            width:100%;
+            background:#ddd;
+            border-radius:20px;
+            overflow:hidden;
+        }
+
+        .bar{
+            height:20px;
+            text-align:center;
+            color:white;
+            line-height:20px;
+        }
+
+        .ramesh{
+            width:55%;
+            background:green;
+        }
+
+        .suresh{
+            width:45%;
+            background:orange;
+        }

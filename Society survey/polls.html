@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voting Page</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            margin:0;
+            padding:20px;
+        }
+
+        h1{
+            text-align:center;
+            color:#003366;
+        }
+
+        .poll-title{
+            text-align:center;
+            margin-bottom:20px;
+            font-size:20px;
+            font-weight:bold;
+        }
+
+        .container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.2);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        h2{
+            color:#003366;
+        }
+
+        button{
+            display:block;
+            margin:20px auto;
+            background:#003366;
+            color:white;
+            border:none;
+            padding:12px 20px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#0055aa;
+        }
+    </style>
+
+    <script>
+        function submitVote(){
+            let candidate =
+                document.querySelector('input[name="candidate"]:checked');
+
+            if(candidate){
+                alert("Your vote has been submitted successfully!");
+            }
+            else{
+                alert("Please select a candidate before voting.");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Voting Page</h1>
+
+    <div class="poll-title">
+        Poll Title: President Election & Cultural Committee Election 2026
+    </div>
+
+    <form>
+
+        <div class="container">
+
+            <div class="card">
+                <h2>Ramesh </h2>
+                <p><strong>Flat Number:</strong> A-101</p>
+                <p><strong>Position Applied:</strong> President</p>
+                <p><strong>Manifesto:</strong> Improve security, cleanliness, and resident welfare.</p>
+
+                <input type="radio" name="candidate" value="Ramesh ">
+                Select Candidate
+            </div>
+
+            <div class="card">
+                <h2>Suresh </h2>
+                <p><strong>Flat Number:</strong> B-202</p>
+                <p><strong>Position Applied:</strong> President</p>
+                <p><strong>Manifesto:</strong> Ensure transparency and faster issue resolution.</p>
+
+                <input type="radio" name="candidate" value="Suresh ">
+                Select Candidate
+            </div>
+
+            <div class="card">
+                <h2>Saritha</h2>
+                <p><strong>Flat Number:</strong> C-306</p>
+                <p><strong>Position Applied:</strong> President</p>
+                <p><strong>Manifesto:</strong> Focus on infrastructure development and Co-cultural activities & programs.</p>
+
+                <input type="radio" name="candidate" value="Saritha">
+                Select Candidate
+            </div>
+
+            <div class="card">
+                <h2>Raju</h2>
+                <p><strong>Flat Number:</strong> D-402</p>
+                <p><strong>Position Applied:</strong> President</p>
+                <p><strong>Manifesto:</strong> Deals with funds and popularity of cultural activities & programs.</p>
+
+                <input type="radio" name="candidate" value="Raju">
+                Select Candidate
+            </div>
+
+        </div>
+
+        <button type="button" onclick="submitVote()">
+            Submit Vote
+        </button>
+
+    </form>
+
+</body>
+</html>
