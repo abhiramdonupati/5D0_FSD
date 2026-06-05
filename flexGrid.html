@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox and Grid Demo</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:20px;
+        }
+
+        h2{
+            background:#333;
+            color:white;
+            padding:10px;
+        }
+
+        .box{
+            background:orange;
+            color:white;
+            padding:20px;
+            text-align:center;
+            font-size:20px;
+            border:2px solid black;
+        }
+
+
+        .flex-container{
+            display:flex;
+            height:200px;
+            border:3px solid blue;
+            margin-bottom:20px;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content:center;
+            align-items:center;
+            align-content:center;
+            gap:10px;
+        }
+
+        .item1{
+            order:2;
+            flex-grow:0.5;
+        }
+
+        .item2{
+            order:1;
+            flex-grow:0.5;
+        }
+
+        .item3{
+            order:3;
+            flex: shrink 1;
+        }
+
+        .item4{
+            flex-basis:150px;
+            align-self:last baseline;
+            animation-name:trans;
+            animation-duration:4s;
+            position:relative;
+        }
+        
+        @keyframes trans{
+         0%   { background-color: red;}
+         25%  {background-color: yellow;}
+         50%  {background-color: blue;}
+         100% {background-color: green;}
+        }
+
+        .grid-container{
+            display:grid;
+            grid-template-columns:1fr 2fr 1fr;
+            grid-template-rows:110px 100px;
+            gap:10px;
+
+            justify-content:center;
+            align-content:center;
+
+            border:3px solid green;
+            padding:10px;
+            height:300px;
+        }
+
+        .g1{
+            grid-column:2/3;
+            grid-row:2/2;
+        }
+
+        .g2{
+            grid: column 100px;;
+            grid-row:50px;
+        }
+
+        .g3{
+            justify-self:stretch;
+            align-self:end;
+        }
+
+        .g4{
+            justify-self:Stretch;
+            align-self:end;
+        }
+
+        .g5{
+            justify-self:stretch;
+            align-self:end;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Flexbox Example</h2>
+
+    <div class="flex-container">
+        <div class="box item1">1</div>
+        <div class="b                                                                                                ox item2">2</div>
+        <div class="box item3">3</div>
+        <div class="box item4">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+    <h2>CSS Grid Example</h2>
+
+    <div class="grid-container">
+        <div class="box g1">Grid 1</div>
+        <div class="box g2">Grid 2</div>
+        <div class="box g3">Grid 3</div>
+        <div class="box g4">Grid 4</div>
+        <div class="box g5">Grid 5</div>
+    </div>
+</body>
+</html>

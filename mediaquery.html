@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Queries Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: lightgray;
+        }
+        .box {
+            padding: 40px;
+            color: white;
+            font-size: 24px;
+            background-color: steelblue;
+            animation:trans 1s ;
+            position:relative;
+        }
+        @keyframes trans{
+            0%{
+                top: 100px;
+                left: 200px;
+                background-color: chartreuse;
+            }
+            25%{
+                right: 300px;
+                top: 100px;
+                background-color: black;
+            }
+            50%{
+
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            body {
+                background-color: lightblue;
+                transition:background-color 2s ease;
+            }
+        }
+        @media screen and (max-width: 992px) {
+            body {
+                background-color: lightgreen;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            body {
+                background-color: lightcoral;
+            }
+
+            .box {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (min-width: 1400px) {
+            .box {
+                background-color: purple;
+            }
+        }
+
+        @media screen and (orientation: portrait) {
+            .box {
+                border: 5px solid red;
+            }
+        }
+        @media screen and (orientation: landscape) {
+            .box {
+                border: 5px solid green;
+            }
+        }
+        @media screen and (min-aspect-ratio: 16/9) {
+            h2 {
+                color: blue;
+            }
+        }
+        @media screen and (min-resolution: 150dpi) {
+            p {
+                font-weight: bold;
+            }
+        }
+        @media print {
+            body {
+                background: white;
+            }
+
+            .box {
+                color: black;
+                background: none;
+                border: 2px solid black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        browser window
+    </div>
+</body>
+</html>
