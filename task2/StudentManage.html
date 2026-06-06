@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color:lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="download.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+                Student Management portal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">CSE</a></li>
+                            <li><a class="dropdown-item" href="#">CSE-AIML</a></li>
+                            <li><a class="dropdown-item" href="#">CSE-DS</a></li>
+                            <li><a class="dropdown-item" href="#">ECE</a></li>
+                            <li><a class="dropdown-item" href="#">CIVIL</a></li>
+                            <li><a class="dropdown-item" href="#">MECHANICAL</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5 bg-light ">
+        <h2>Hello Students!!</h2>
+        <p>Welcome to Management Portal!</p>
+        <div align="center">
+        <a href="register.html" class="btn btn-outline-danger">Register Now</a>
+        </div>
+    </div>
+    <div class="container mt-4 bg-light">
+        <h2>About the College</h2>
+        <p>Our college is a higher education institution offering undergraduate degrees, certificates, or vocational
+            training. It serves as a bridge between adolescence and adulthood, providing academic specialization, career
+            preparation, and personal growth.</p>
+        <ul>
+            <h2 align-s>Key Aspects of College</h2>
+            <li>Degrees Offered:
+                <p> Options range from short-term Certificates and two-year Associate's degrees to four-year Bachelor's
+                    degrees</p>
+                </l1>
+            <li> Academics:
+                <p>Unlike high school, college allows you to focus deeply on a specific major and introduces you to
+                    academic advising and specialized faculty.</p>
+                </l1>
+            <li>Campus Life:
+                <p>Beyond studying, it is a hub for extracurricular activities, clubs, and networking that prepares
+                    students for the professional world.Admissions: Requirements vary, though many institutions weigh
+                    high school grades, extracurriculars, and standardized test scores (such as the SAT or ACT).</p>
+                </l1>
+        </ul>
+    </div>
+    </div>
+    <div class="container mt-4 text-center">
+        <h2 align="center"> Our Features</h2>
+        <div class="row">
+            <div class="col sm-4">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Student Registration</h5>
+                        <p class="card-text"> Maintains digital profiles, handles enrollments, tracks schedules, and secures records (medical, demographic, and behavioral)</p>
+                        <a href="profile.html" class="btn btn-outline-danger">Register</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col sm-4">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Attendance Management</h5>
+                        <p class="card-text"> Replaces paper registers with smart solutions like facial recognition, RFID tracking, or quick teacher app check-ins. It automates reports and triggers real-time alerts to parents for absences.</p>
+                        <a href="#" class="btn btn-outline-danger"> Check Attendance</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col sm-4">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Results Management</h5>
+                        <p class="card-text"> Automates the processing of exam grades, calculates cumulative averages, and generates digital report cards.</p>
+                        <a href="#" class="btn btn-outline-danger">Show Results</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4 bg-dark">
+        <footer>
+            <p align="center" style="color:aliceblue">@Student Portal All rights are reserved.</p>
+        </footer>
+    </div>
+    <!-- ✅ Bootstrap JS (IMPORTANT for dropdown to work) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
