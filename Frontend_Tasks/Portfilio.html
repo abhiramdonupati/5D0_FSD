@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: linear-gradient(to right, #0d6efd, #6610f2);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+    }
+    section {
+      padding: 60px 0;
+    }
+  </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="">MyPortfolio</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="hero">
+  <img src="./PROFILE.jpg" class="profile-img mb-3">
+  <h1>Donupati Abhiram</h1>
+  <h4> Btech Student|Full Stack Developer</h4>
+  <p>Creating responsive and modern web applications</p>
+  <button class="btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#resumeModal">
+    Download Resume
+  </button>
+</section>
+<div class="modal fade" id="resumeModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Resume</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p>Click below to download resume</p>
+        <a href="#" class="btn btn-primary">Download</a>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="about" class="container">
+  <h2 class="text-center mb-4">About Me</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <h5>Career Objective</h5>
+      <p>To work in a challenging environment and grow as a professional developer.</p>
+      <h5>Personal Interests</h5>
+      <ul>
+        <li>Web Development</li>
+        <li>UI/UX Design</li>
+        <li>AI & Technology</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h5>Education</h5>
+      <ul>
+        <li>B.Tech - Computer Science</li>
+        <li>Intermediate - MPC</li>
+        <li>Schooling - CBSE</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="skills" class="bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Skills</h2>
+    <p>HTML</p>
+    <div class="progress mb-3">
+      <div class="progress-bar" style="width:90%">90%</div>
+    </div>
+    <p>CSS</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-success" style="width:85%">85%</div>
+    </div>
+    <p>Bootstrap</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-warning" style="width:80%">80%</div>
+    </div>
+    <p>JavaScript</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-danger" style="width:75%">75%</div>
+    </div>
+  </div>
+</section>
+<section id="projects" class="container">
+  <h2 class="text-center mb-4">Projects</h2>
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-3">
+      <div class="card">
+        <img src="./1.png" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5>Portfolio Website</h5>
+          <p>Personal responsive portfolio using Bootstrap.</p>
+          <small>HTML, CSS, Bootstrap</small><br>
+          <a href="#" class="btn btn-sm btn-primary mt-2">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="card">
+        <img src="./4.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5>Event Management</h5>
+          <p>College event registration system.</p>
+          <small>HTML, JS</small><br>
+          <a href="#" class="btn btn-sm btn-primary mt-2">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="card">
+        <img src="./2.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5>AgriHive Application</h5>
+          <p>Farmer Friendly Website using HTML,CSS and JavaScript.</p>
+          <small>JS, Bootstrap</small><br>
+          <a href="#" class="btn btn-sm btn-primary mt-2">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="card">
+        <img src="./3.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5>To-Do List</h5>
+          <p>Task manager web app.</p>
+          <small>HTML, JS</small><br>
+          <a href="#" class="btn btn-sm btn-primary mt-2">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="achievements" class="bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Achievements</h2>
+    <div class="row g-3">
+      <div class="col-md-3"><div class="card p-3">
+        <img src="./2.png" class="card-img-top" height="200" width="100" alt="">
+         Certification in Web Development</div></div>
+      <div class="col-md-3"><div class="card p-3">
+        <img src="./original-c0f26ad8ce01a9966462f1b1a4b75ae3.webp" class="card-img-top" height="200" width="100" alt="">
+         Attended UI/UX Workshop</div></div>
+      <div class="col-md-3"><div class="card p-3">
+        <img src="./6.png" class="card-img-top" height="200" width="100" alt="">
+         Internship at Tech Company</div></div>
+      <div class="col-md-3"><div class="card p-3">
+        <img src="./7.jpg" class="card-img-top" height="200" width="100" alt="">
+         Academic Excellence Award</div></div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="container">
+  <h2 class="text-center mb-4">Contact Me</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form>
+        <input type="text" class="form-control mb-3" placeholder="Name">
+        <input type="email" class="form-control mb-3" placeholder="Email">
+        <input type="text" class="form-control mb-3" placeholder="Subject">
+        <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+        <button class="btn btn-primary w-100">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+<footer class="text-center bg-dark text-white p-3">
+  © 2026 My Portfolio | All Rights Reserved
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
